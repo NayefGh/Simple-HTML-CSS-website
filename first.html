@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proxima+Nova">
+<link rel="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon" href="main.png">
+
+    <div class="header">
+        <img src="./icons//DrawIcon.svg" class="draw">
+        <img src="Vector.png">
+        <a href="fifth.html" class="cart">
+            <img src="icons/CartIcon.svg" alt="Icon">
+        </a> 
+    </div>
+    <nav>
+        <div class="search">
+            <img src="/icons/Searchicon.svg" type="icon">
+        </div>
+        <div>
+            <a href="first.html">HOME</a>
+            <a href="second.html">SPACES</a>
+            <a href="third.html">PRODUCTS & SERVICES</a>
+            <a href="#">SHOWROOMS</a>
+            <a href="#">COMPANY</a>
+            <a href="#">MEDIA</a>
+            <a href="#">CONTACT</a>
+        </div>
+        <div class="right">
+            <a href="fifth.html" class="icon-button">
+                <img src="icons/CartIcon.svg" alt="Icon">
+            </a>
+            <a href="third.html" class="icon-button">
+                <img src="icons/Hearticon.svg" alt="Icon">
+            </a>
+            <a href="fourth.html" class="icon-button">
+                <img src="icons/Contacticon.svg" alt="Icon">
+            </a>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <!--1st page-->
+    <div class="first">
+        <div class="container1">
+            <h1>New Generation Ceramic Tile</h1>
+            <p>Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus maecenas
+                consequat. Elementum interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra
+                sagittis sit aliquet at. Magna nam platea justo.
+            </p>
+            <button>LEARN MORE</button>
+        </div>
+    </div>
+    <!--end of 1st-->
+
+    <!--2nd page-->
+    <div class="pattern">
+        <div class="second">
+            <div class="products">
+                <h1>Products</h1>
+                <hr>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text.</p>
+            </div>
+            <div class="pics1">
+                <div class="side1">
+                    <div class="pic1">
+                        <img src="icons/firstpic.svg">
+                        <div class="title1">
+                            <h1>Bathroom Tiles</h1>
+                            <p>Ante mus blandit sapien sociosqu per consequat ad.</p>
+                        </div>
+                    </div>
+                    <div class="pic2">
+                        <img src="icons/secondpic.svg">
+                        <div class="title2">
+                            <h1>Marble</h1>
+                            <p>Ante mus blandit sapien sociosqu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="side2">
+                    <div class="pic3">
+                        <img src="icons/thirdpic.svg">
+                        <div class="title3">
+                            <h1>Outdoor Flooring</h1>
+                            <p>Ante mus blandit sapien sociosqu per consequat ad.</p>
+                        </div>
+                    </div>
+                    <div class="pic4">
+                        <img src="icons/fourthpic.svg">
+                        <div class="title4">
+                            <h1>Kitchen Interior</h1>
+                            <p>Ante mus blandit sapien sociosqu per consequat ad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of 2nd-->
+
+    <!--3rd page-->
+    <div class="third">
+        <div class="vision">
+            <div class="container2">
+                <h1>Vision</h1>
+                <p>Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus maecenas
+                    consequat.
+                    Elementum interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis
+                    sit
+                    aliquet at. Magna nam platea justo.
+                </p>
+                <button>LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <!--end of 3rd-->
+
+    <!--4th page-->
+    <div class="designers">
+        <div class="fourth">
+            <div class="title5">
+                <h1>Creative Solutions by Professional Designers</h1>
+                <p>Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus maecenas
+                    consequat.
+                    Elementum interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis
+                    sit
+                    aliquet at. Magna nam platea justo.
+                </p>
+                <div class="pics2">
+                    <img class="bed" src="icons/bed.svg">
+                    <img class="live" src="icons/live.svg">
+                    <img class="coach" src="icons/coach.svg">
+                </div>
+                <section id="Wrapper">
+                    <div id="Slideshow">
+                        <div id="Slider">
+                            <img src="icons/bed.svg" alt="Slide 1" />
+                            <img src="icons/live.svg" alt="Slide 2" />
+                            <img src="icons/coach.svg" alt="Slide 3" />
+                        </div>
+                        <div id="Arrows">
+                            <span id="Prev">
+                                << /span>
+                                    <span id="Next">></span>
+                        </div>
+                    </div>
+                </section>
+                <script>
+                    const slider = document.getElementById('Slider');
+                    const prevButton = document.getElementById('Prev');
+                    const nextButton = document.getElementById('Next');
+                    const slides = slider.querySelectorAll('img');
+                    const totalSlides = slides.length;
+                    let currentSlide = 0;
+
+                    function showSlide(slideIndex) {
+                        slides.forEach((slide) => {
+                            slide.style.display = 'none';
+                        });
+                        slides[slideIndex].style.display = 'block';
+                    }
+
+                    nextButton.addEventListener('click', () => {
+                        currentSlide = (currentSlide + 1) % totalSlides;
+                        showSlide(currentSlide);
+                    });
+
+                    prevButton.addEventListener('click', () => {
+                        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                        showSlide(currentSlide);
+                    });
+
+                    showSlide(currentSlide);
+                </script>
+                <div class="readMoreButtonContainer">
+                    <button>READ MORE</button>
+                </div>
+            </div>
+            <div class="plant">
+                <img src="icons/plant.svg">
+                <div class="play">
+                    <div>
+                        <img src="icons/playbutton.svg">
+                    </div>
+                    <div>
+                        <div class="watch">
+                            <p>Watch</p>
+                        </div>
+                        <div class="video">
+                            <p>Video-tour</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of 4th-->
+
+    <!--5th page-->
+    <div class="projects">
+        <div class="projectheader">
+            <h1>Projects</h1>
+            <hr>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text.</p>
+        </div>
+        <div class="pics3">
+            <div class="side3">
+                <div class="kingdompic">
+                    <img src="icons/kingdom.png">
+                    <div class="title6">
+                        <h1>Kingdom Tower</h1>
+                        <p>Marble Flooring</p>
+                    </div>
+                </div>
+                <div class="dubaipic">
+                    <img src="icons/dubai.png">
+                    <div class="title7">
+                        <h1>Dubai Mall</h1>
+                        <p>Wood Flooring</p>
+                    </div>
+                </div>
+            </div>
+            <div class="side4">
+                <div class="kingroad">
+                    <img src="icons/kingroad.png">
+                    <div class="title8">
+                        <h1>King Road Offices</h1>
+                        <p>Outdoor Flooring</p>
+                    </div>
+                </div>
+                <div class="beach">
+                    <img src="icons/beach.png">
+                    <div class="title9">
+                        <h1>Beach Tower Alupang</h1>
+                        <p>Wood Flooring</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projbutton">
+            <button>VIEW ALL</button>
+        </div>
+    </div>
+    <!--end of 5th-->
+
+    <!--6th page-->
+     <div class="tilecollection">
+        <div class="tileheader">
+            <h1>Tile Collections</h1>
+            <hr>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text.</p>
+        </div>
+        <div class="pics4">
+            <div class="side5">
+                <div class="alltiles">
+                    <img src="icons/zurichvision.png">
+                    <div class="title10">
+                        <h1>Zurich Vision 60x60</h1>
+                        <div class="price">
+                            <p class="old">449.99 SAR</p>
+                            <p class="new">237.99 SAR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alltiles">
+                    <img src="icons/zurichpearl.png">
+                    <div class="title10">
+                        <h1>Zurich Pearl 60x60</h1>
+                        <div class="price">
+                            <p class="old">449.99 SAR</p>
+                            <p class="new">312.49 SAR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zurichgrey">
+                    <img src="icons/zurichgrey.png">
+                    <div class="title10">
+                        <h1>Zurich Grey 60x60</h1>
+                        <div class="price">
+                            <p class="old">449.99 SAR</p>
+                            <p class="new">312.49 SAR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zurichdark">
+                    <img src="icons/zurichdark.png">
+                    <div class="title10">
+                        <h1>Zurich Dark Grey 60x60</h1>
+                        <div class="price">
+                            <p class="old">449.99 SAR</p>
+                            <p class="new">312.49 SAR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side6">
+                <div class="alltiles">
+                    <img src="icons/windsorwhite.png">
+                    <div class="title10">
+                        <h1>Windsor White Oak</h1>
+                        <div class="price">
+                            <p class="old">449.99 SAR</p>
+                            <p class="new">237.99 SAR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alltiles">
+                    <img src="icons/sicilydecor.png">
+                    <div class="title10">
+                        <h1>Sicily Grey Décor 30×60</h1>
+                        <div class="price">
+                            <p class="old">449.99 SAR</p>
+                            <p class="new">312.49 SAR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alltiles">
+                    <img src="icons/sardinia.png">
+                    <div class="title10">
+                        <h1>Sardinia White</h1>
+                        <div class="price">
+                            <p class="old">449.99 SAR</p>
+                            <p class="new">312.49 SAR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alltiles">
+                    <img src="icons/sicilygrey.png">
+                    <div class="title10">
+                        <h1>Sicily Grey 30x60</h1>
+                        <div class="price">
+                            <p class="old">449.99 SAR</p>
+                            <p class="new">312.49 SAR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tilebutton">
+                <button>MORE PRODUCTS</button>
+            </div>
+        </div>
+    </div> -->
+    <!--end of 6th-->
+
+    <!--7th page-->
+    <!-- <div class="showroom">
+        <div class="showinside">
+            <div class="showcontainer">
+                <div class="insidecon">
+                    <h1>Our Showrooms</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text.</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    end of 7th 
+
+    <!--end page-->
+    <footer class="footer">
+        <div class="logoleft">
+            <div class="logo">
+                <img src="icons/logosmall.png">
+            </div>
+            <div class="media">
+                <img src="icons/fb.png">
+                <img src="icons/twitter.png">
+                <img src="icons/insta.png">
+            </div>
+            <p>Copyright © 2022 | All Rights Reserved.</p>
+        </div>
+        <div class="allfooter">
+            <div class="productsfooter">
+                <div class="product2">
+                    <h1>Products</h1>
+                    <img src="icons/arrow.png" class="arrow">
+                </div>
+                <div class="whitepara">
+                    <p>Sand Stone</p>
+                </div>
+                <div class="greypara">
+                    <p>Stone</p>
+                    <p>Cement</p>
+                    <p>Soft Stone</p>
+                </div>
+            </div>
+            <div class="servicefooter">
+                <div class="service2">
+                    <h1>Services</h1>
+                    <img src="icons/arrow.png" class="arrow">
+                </div>
+                <div class="greypara">
+                    <p>Measurement Service</p>
+                    <p>Product Advice</p>
+                    <p>Interior Design</p>
+                </div>
+            </div>
+            <div class="contactfooter">
+                <div class="contact2">
+                    <h1>Contact Information</h1>
+                    <img src="icons/arrow.png" class="arrow">
+                </div>
+                <div class="whitepara">
+                    <p>3181 Al Imam Saud Ibn Abdul Aziz Branch Rd,
+                        An Nuzhah, Riyadh 12474,
+                        Saudi Arabia</p>
+                </div>
+            </div>
+        </div>
+        <div class="media2">
+            <hr>
+            <div class="iconsfooter">
+                <img src="icons/fb.png">
+                <img src="icons/twitter.png">
+                <img src="icons/insta.png">
+            </div>
+            <p>Copyright © 2022 | All Rights Reserved</p>
+            <p>Created with love by thecreation.design</p>
+        </div>
+    </footer> -->
+</body>
+
+</html>
